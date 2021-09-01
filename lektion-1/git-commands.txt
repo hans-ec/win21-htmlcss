@@ -12,3 +12,6 @@ git add .
 
 # sparar alla ändringar till din local git repository, görs varje gång du gjort ändringar
 git commit -m "lektion 1"
+
+# skicka upp alla filer till din remote git repository, görs varje gång du gjort ändringar
+git push origin master
