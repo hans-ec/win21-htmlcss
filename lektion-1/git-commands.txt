@@ -1,6 +1,12 @@
 # skapar en ny local git repository ska göras vid nya projekt och görs endast 1 gång per projekt
 git init
 
+# lägg till en github remote repository för lagring i molnet, detta görs bara en gång per projekt
+git remote add origin https://github.com/hans-ec/win21-htmlcss.git
+
+
+
+
 # lägger till nya filer/ändrade filer till min local git repository, görs varje gång du gjort ändringar
 git add .
 
