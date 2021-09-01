@@ -1,5 +1,8 @@
 # skapar en ny local git repository ska göras vid nya projekt och görs endast 1 gång per projekt
 git init
 
-# lägger till nya filer/ändrade filer till min local git repository görs varje gång du gjort ändringar
+# lägger till nya filer/ändrade filer till min local git repository, görs varje gång du gjort ändringar
 git add .
+
+# sparar alla ändringar till din local git repository, görs varje gång du gjort ändringar
+git commit -m "lektion 1"
