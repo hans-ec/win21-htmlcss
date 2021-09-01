@@ -4,6 +4,11 @@ git init
 # lägg till en github remote repository för lagring i molnet, detta görs bara en gång per projekt
 git remote add origin https://github.com/hans-ec/win21-htmlcss.git
 
+
+
+
+
+
 # lägger till nya filer/ändrade filer till min local git repository, görs varje gång du gjort ändringar
 git add .
 
@@ -12,3 +17,13 @@ git commit -m "lektion 1"
 
 # skicka upp alla filer till din remote git repository, görs varje gång du gjort ändringar
 git push origin master 
+
+
+
+
+
+#för att hämta min remote git repository från mig github, görs bara en gång
+git clone https://github.com/hans-ec/win21-htmlcss.git
+
+# för att hämta hem de senaste från din remote git repository, körs varje gång du vill hämta hem nya saker
+git pull origin master
