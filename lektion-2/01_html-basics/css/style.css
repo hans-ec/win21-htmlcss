@@ -1,4 +1,34 @@
+.bg-purple {
+    --bs-bg-opacity: 1;
+    background-color: rgba(128, 0, 128, var(--bs-bg-opacity)) !important;
+}
 
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: black !important;
+}
 
+#card-1 {
+    background-image: url("../images/pexels-jordan-hyde-1070360-m.jpg");
+    background-repeat: no-repeat;
+    width: 100%; /*or your image's width*/
+    height: 250px; /*or your image's height*/
+    margin: 0;
+    padding: 0;
+}
 
-
+@media (min-width: 768px) {
+    #card-1 {
+        background-image: url("../images/pexels-jordan-hyde-1070360-t.jpg");
+        height: 512px; /*or your image's height*/
+    }
+}
+@media (min-width: 1400px) {
+    #card-1 {
+        background-image: url("../images/pexels-jordan-hyde-1070360.jpg");
+        height: 880px; /*or your image's height*/
+        background-size: contain;
+    }
+}
