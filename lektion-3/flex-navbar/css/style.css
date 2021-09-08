@@ -1,0 +1,31 @@
+@import "standard.css";
+
+.navbar-top {
+    padding: 0.6rem 0;
+    background-color: thistle;
+}
+
+.navbar-top-items {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-top-items i {
+    font-size: 1.2em;
+}
+
+.navbar-top .navbar-top-items .working-hour {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top .navbar-top-items .working-hour p {
+    margin-left: 0.3rem;
+    font-size: 0.8em;
+}
+
+.navbar-top .navbar-top-items .social-media i {
+    margin-left: 0.5rem;
+}
