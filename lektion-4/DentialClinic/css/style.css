@@ -1,0 +1,90 @@
+@import "default.css";
+
+/* navbar top */
+#navbar-top {
+    border-bottom: 1px solid #c5c5c5;
+    height: 60px;
+}
+#navbar-top .working-hours i {
+    color: #2BAAEC;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+#navbar-top .social-media i {
+    font-size: 1rem;
+    margin-left: 1.7rem;
+}
+
+
+
+/* navbar-main */
+#navbar-main #navbarNav {
+    text-align: center;
+}
+#navbar-main #navbarNav .navbar-nav {
+    font-family: 'Roboto Slab', serif;
+}
+#navbar-main #navbarNav .navbar-nav .nav-item {
+    margin-left: 1.35rem;
+    font-size: 1.125rem;
+    color: #363636;
+}
+@media(min-width: 1200px) {
+    #navbar-main.navbar {
+        height: 180px;
+    }
+
+    #navbar-main #navbarNav {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+
+
+/* showcase */
+#showcase  {
+    background-color: #dedede;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+#showcase img {
+    margin-left: -4rem;
+}
+#showcase h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.75rem;
+    color: #363636;
+}
+#showcase p {
+    font-size: 18px;
+    color: #363636;
+    margin: 45px 0;
+}
+@media (min-width: 768px) {
+    #showcase h1 {
+        font-size: 3.75rem;
+    }   
+}
+@media (min-width: 992px) {
+    #showcase h1 {
+        font-size: 4.75rem;
+    }   
+}
+@media(min-width: 1200px) {
+    #showcase  {
+        align-items: end;
+        padding:0;
+        padding-top: 3rem;
+        text-align: left;
+    }
+
+    #showcase h1 {
+        font-size: 3.75rem;
+    }   
+}

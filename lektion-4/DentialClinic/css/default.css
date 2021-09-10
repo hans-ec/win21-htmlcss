@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+*/
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: #626262;
+}
+
+a {
+    color: #2BAAEC;
+}
+a:hover {
+    color: #25E6C8;
+}
+
+.border-dark {
+    border: 1px solid black;
+}
+
+.f-1 {
+    flex: 1;
+}
+
+.f-2 {
+    flex: 2;
+}
+
+
+/* buttons */
+.btn {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 18px 56px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #25E6C8;
+    border-color: #25E6C8;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2BAAEC;
+    border-color: #2aa4e6;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: #2BAAEC;
+    border-color: #2aa4e6;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #2aa4e6;
+    border-color: #2797d3;
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+.btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #25E6C8;
+    border-color: #25E6C8;
+}
+
+/* navbar colors */
+.navbar-light .navbar-nav .nav-link {
+    color: #363636;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #25E6C8;
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #25E6C8;
+}
