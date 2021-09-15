@@ -1,0 +1,31 @@
+#top-navbar {
+    height: 80px;
+}
+
+.working-hour,
+.social-media {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.working-hour {
+    font-size: 0.9rem;
+}
+.working-hour i {
+    font-size: 2rem;
+}
+
+.working-hour i,
+.social-media i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.working-hour i:first-child {
+    margin-left: 0;
+}
+
+.social-media i:last-child {
+    margin-right: 0;
+}
