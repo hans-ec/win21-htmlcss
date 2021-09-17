@@ -96,6 +96,12 @@
     grid-row: 1;
     grid-column: 1;
 }
+#showcase .showcase-image a {
+    display: block;
+    font-size: 0.5rem;
+    text-decoration: none;
+}
+
 #showcase .showcase-content {
     grid-row: 1;
     grid-column: 2;
