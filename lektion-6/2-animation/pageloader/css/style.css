@@ -1,0 +1,45 @@
+@import "animations.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageloader {
+    display: flex;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    background: lightslategrey;
+    border-radius: 50%;
+    margin: 0.2rem;
+}
+
+.animate {
+    position: relative;
+    animation: bounds 0.5s infinite;
+}
+
+#circle-1 {
+    animation-delay: 0s;
+}
+#circle-2 {
+    animation-delay: 0.10s;
+}
+#circle-3 {
+    animation-delay: 0.21s;
+}

@@ -1,0 +1,9 @@
+@keyframes blink {
+    0%      { opacity: 100%; }
+    50%     { opacity: 0%; }
+}
+
+@keyframes bounds {
+    0%      { margin-top: 0 }
+    50%     { margin-top: -3px; }
+}

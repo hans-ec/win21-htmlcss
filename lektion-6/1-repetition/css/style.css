@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "animations.css";
 
 /* 
     dark : #313f4f
@@ -117,6 +118,7 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
+    position: relative;
 }
 @media (min-width: 992px) { #showcase > .container  { grid-template-columns: 1fr 1fr;}}
 
@@ -125,6 +127,8 @@ a:hover {
     display: none;
     grid-row: 1;
     grid-column: 1;
+    position: relative;
+    top: 0;
 }
 @media (min-width: 992px) { #showcase .showcase-image  { display: inline-block; }}
 
@@ -162,6 +166,7 @@ a:hover {
     padding: 0.85rem 1.75rem;
     border-radius: 35px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 #showcase .showcase-content button:hover {
     background-color: #33535f;
@@ -184,6 +189,13 @@ a:hover {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
+
+.move-updown { animation: move-updown 4s infinite alternate ease-in-out; }
+.blink { animation: blink 1s infinite; }
+#scrolldown-arrow-1 { animation-delay: 0s; }
+#scrolldown-arrow-2 { animation-delay: 0.10s; }
+#scrolldown-arrow-3 { animation-delay: 0.20s; }
+
 
 
 /* what we do / about */
@@ -226,9 +238,10 @@ a:hover {
     background: white;
     border: 1px solid #eeeeee;
     box-shadow: 0 4px 12px 3px rgba(49, 63, 78, 0.411);
+    transition: box-shadow 0.15s ease-in-out;
 }
 #about .about-services .box:hover {
-    box-shadow: 0 4px 12px 0 rgba(49, 63, 78, 0.411);
+    box-shadow: 0 4px 10px 0 rgba(49, 63, 78, 0.411);
 }
 #about .about-services .box i {
     font-size: 4rem;

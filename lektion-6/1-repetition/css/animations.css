@@ -1,0 +1,12 @@
+@keyframes blink {
+    0%      { opacity: 100%; }
+    50%     { opacity: 0%; }
+}
+
+@keyframes move-updown {
+    0%      { top: 0; left: 0 }
+    25%     { top: -1rem; left: 1rem; }
+    50%     { top: -2rem; left: 1rem; }
+    75%     { top: -2rem; left: 0.5rem; }
+    100%     { top: 0; left: 0rem; }
+}
