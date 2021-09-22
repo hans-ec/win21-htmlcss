@@ -1,0 +1,40 @@
+.ball {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 182, 193, 0.15);
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    /* animation: slide-leftright 8s alternate infinite ease-in-out; */
+}
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 182, 193, 0.76);
+    position: relative;
+    top: 0;
+}
+.square:hover {
+    animation: rotate 2s ease-in-out alternate forwards;
+}
+
+.fa-sync-alt {
+
+}
+.fa-sync-alt:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes slide-leftright {
+    0%      { left: 0; }
+    50%     { left: calc(100% - 100px); }
+    100%    { left: 0;}
+}
+
+@keyframes rotate {
+    0%      { transform: rotateZ(0); }
+    100%      { transform: rotateZ(360deg);}
+}
