@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inlineblock {
+  display: inline-block;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+#navbar-top {
+  display: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+@media (min-width: 768px) {
+  #navbar-top {
+    display: block;
+  }
+}
+#navbar-top .hours {
+  font-size: 1rem;
+}
+#navbar-top .hours i {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+  color: #2baaec;
+}
+#navbar-top .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+#navbar-top .nav-links .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#navbar-top .nav-links .nav-link:last-child {
+  padding-right: 0;
+}
+#navbar-top .nav-links .nav-link a {
+  color: #2baaec;
+  text-decoration: none;
+}
+#navbar-top .nav-links .nav-link a:hover {
+  color: #25e5c8;
+}
+
+#navbar {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#showcase {
+  background-color: #cccccc;
+  color: #595959;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#showcase .bilden {
+  display: none;
+}
+@media (min-width: 992px) {
+  #showcase .bilden {
+    display: block;
+  }
+}
+#showcase .texten {
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #showcase .texten {
+    text-align: right;
+  }
+}

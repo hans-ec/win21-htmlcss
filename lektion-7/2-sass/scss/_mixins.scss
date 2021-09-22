@@ -1,0 +1,23 @@
+@mixin default-font {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: $font-primary;
+}
+
+@mixin center-content($height: 100vh) {
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin set-colors($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+@mixin set-dynamic-colors($color, $procent: 50%) {
+    background-color: $color;
+    color: set-dynamic-text-color($color, $procent);
+}
+

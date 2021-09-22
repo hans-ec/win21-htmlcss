@@ -1,0 +1,17 @@
+@function set-text-color($color) {
+    @if( lightness($color) > 70 ) {
+        @return $dark;
+    }
+    @else {
+        @return $light;
+    }
+}
+
+@function set-dynamic-text-color($color, $procent: 50%) {
+    @if( lightness($color) > 70 ) {
+        @return darken($color, $procent);
+    }
+    @else {
+        @return lighten($color, $procent);
+    }    
+}

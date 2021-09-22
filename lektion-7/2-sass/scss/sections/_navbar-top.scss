@@ -1,0 +1,46 @@
+#navbar-top {
+    display:none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
+
+    @include md {
+        display: block;
+    }
+
+    .hours {
+        font-size: 1rem;
+
+        i {
+            font-size: 1.2em;
+            margin-right: 0.5rem;
+            color: $blue;
+        }
+    }
+
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+
+        .nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        
+            &:last-child {
+                padding-right: 0;
+            }
+
+            a {
+                color: $blue;
+                text-decoration: none;
+            
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+
+    }
+}
