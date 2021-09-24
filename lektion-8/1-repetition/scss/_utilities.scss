@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: $bread-font;
+    margin: 0;
+}
+
+html, body {
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-main;
+}
+
+.border {
+    border: 1px solid $color-main;
+    opacity: 15%;
+}
+.border-line {
+    border-bottom: 1px solid $color-main;
+    opacity: 15%;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include md { max-width: $breakpoint-md-max-width; }
+    @include lg { max-width: $breakpoint-lg-max-width; }
+    @include xl { max-width: $breakpoint-xl-max-width; }
+    @include xxl { max-width: $breakpoint-xxl-max-width; }
+}
+
+@each $amount in $space-amount {
+    .m-#{$amount} { margin: #{$amount + "%"}; } 
+    .ms-#{$amount} { margin-left: #{$amount + "%"}; } 
+    .me-#{$amount} { margin-right: #{$amount + "%"}; } 
+    .mt-#{$amount} { margin-top: #{$amount + "%"}; } 
+    .mb-#{$amount} { margin-bottom: #{$amount + "%"}; } 
+    .mx-#{$amount} { margin-left: #{$amount + "%"}; margin-right: #{$amount + "%"}; } 
+    .my-#{$amount} { margin-top: #{$amount + "%"}; margin-bottom: #{$amount + "%"}; } 
+
+    .p-#{$amount} { padding: #{$amount + "%"}; } 
+    .ps-#{$amount} { padding-left: #{$amount + "%"}; } 
+    .pe-#{$amount} { padding-right: #{$amount + "%"}; } 
+    .pt-#{$amount} { padding-top: #{$amount + "%"}; } 
+    .pb-#{$amount} { padding-bottom: #{$amount + "%"}; } 
+    .px-#{$amount} { padding-left: #{$amount + "%"}; padding-right: #{$amount + "%"}; } 
+    .py-#{$amount} { padding-top: #{$amount + "%"}; padding-bottom: #{$amount + "%"}; } 
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 15px 24px;
+    @include roboto-medium;
+} 
+
+.btn-outline-orange {
+    border-color: $color-orange;
+}

@@ -1,0 +1,18 @@
+// breakpoints
+@mixin md { @media (min-width: $breakpoint-md) { @content }}
+@mixin lg { @media (min-width: $breakpoint-lg) { @content }}
+@mixin xl { @media (min-width: $breakpoint-xl) { @content }}
+@mixin xxl { @media (min-width: $breakpoint-xxl) { @content }} 
+
+@mixin center($height: 100%) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+}
+
+@mixin roboto-medium {
+    font-family: $bread-font;
+    font-weight: 500;
+    font-size: 17px;
+}

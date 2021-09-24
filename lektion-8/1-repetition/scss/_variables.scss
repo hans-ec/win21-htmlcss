@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+$headline-font: 'Poppins', sans-serif;
+$bread-font: 'Roboto', sans-serif;
+
+$color-main: #57647C;
+$color-headline: #252525;
+$color-pink: #F23779;
+$color-orange: #FF6803;
+$color-dark: $color-headline;
+$color-light: #ffffff;
+
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 1600px;
+
+$breakpoint-md-max-width: 720px;
+$breakpoint-lg-max-width: 960px;
+$breakpoint-xl-max-width: 1170px;
+$breakpoint-xxl-max-width: 1320px;
+
+$space-amount: (0, 1, 2, 3, 4, 5); 

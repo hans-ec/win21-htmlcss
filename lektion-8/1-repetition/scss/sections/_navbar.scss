@@ -1,0 +1,45 @@
+#navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        img {
+            width: 200px;
+        
+            @include md {
+                width: 100%
+            }
+        }
+    }
+
+    .navbar-links {
+
+        display: none;
+        align-items: center;
+
+        @include lg {
+            display: flex;
+        }
+
+        .nav-links {
+            font-size: 1.063rem;
+            font-weight: 500;
+
+            .nav-link {
+                text-decoration: none;
+                color: set-text-color($color-light);
+                margin-left: 25px;
+                margin-right: 1.563rem;
+
+            }
+        }
+
+        i {
+            margin-left: 5px;
+            margin-right: 30px;
+            font-size: 1.5rem;
+        }
+    }
+}
