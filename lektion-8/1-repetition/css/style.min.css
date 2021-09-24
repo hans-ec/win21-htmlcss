@@ -423,6 +423,14 @@ html, body {
   border-color: #FF6803;
 }
 
+.header-bg {
+  background-image: url(../../images/BG.svg);
+  background-size: cover;
+  background-position: bottom;
+  height: 992px;
+  background-repeat: no-repeat;
+}
+
 #navbar .container {
   display: flex;
   justify-content: space-between;
