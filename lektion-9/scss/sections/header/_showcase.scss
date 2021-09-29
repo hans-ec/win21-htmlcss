@@ -1,0 +1,50 @@
+#showcase {
+    position: relative;
+    width: 100%;
+    min-height: 1026px;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+
+    .showcase-bg {
+        position: absolute;
+        right: -200px;
+        top: -100px;
+        z-index: -1;
+    
+        @media (min-width: 1920px) {
+            right: -40px;         
+        }
+    }
+
+
+
+    .showcase-text {
+        h1 {
+            font-family: $poppins;
+            font-weight: 700;
+            font-size: 60px;
+            color: $dark;
+            margin-bottom: 35px;
+        }
+        
+        p {
+            font-family: $roboto;
+            font-size: 18px;
+            font-weight: 400;
+            color: $gray;
+        }    
+    }
+
+    .showcase-image {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    }
+}

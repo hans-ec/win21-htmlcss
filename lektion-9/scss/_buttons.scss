@@ -1,0 +1,43 @@
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: $roboto;
+    font-size: 17px;
+}
+
+.btn-outline-orange {
+    color: $dark;
+    font-weight: 500;
+    border-color: $orange;
+
+    &:hover {
+        color: $light;
+        background-color: $orange;
+        border-color: $orange;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(255, 104, 3, 0.5);
+    }
+}
+
+.btn-gradient-orange {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background: rgb(238,48,122);
+    background: linear-gradient(90deg, rgba(238,48,122,1) 0%, rgba(252,139,83,1) 100%);
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 700;
+    color: $light;
+    border-color: $light-orange;
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(255, 104, 3, 0.5);
+    }
+}

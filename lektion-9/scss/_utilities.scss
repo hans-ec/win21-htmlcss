@@ -1,0 +1,14 @@
+* {
+    font-family: $roboto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;;
+    }
+}
+
+.borderline {
+    border-bottom: 2px solid rgba(87, 100, 124, 0.15)
+}
+
